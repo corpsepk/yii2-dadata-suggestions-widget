@@ -4,23 +4,29 @@ use \corpsepk\DaData\SuggestionsWidget;
 /* @var $this yii\web\View */
 /* @var $model tests\models\Model */
 
-// TODO test - с ActiveForm
-// TODO test - Token required
+$form = new \yii\widgets\ActiveForm();
+$form->field($model, 'name')->widget(SuggestionsWidget::classname(), [
+    'token' => 'apiKey'
+]);
 
 echo SuggestionsWidget::widget([
     'model' => $model,
+    'token' => 'apiKey',
     'attribute' => 'name',
 ]);
 
 echo SuggestionsWidget::widget([
     'name' => 'name',
+    'token' => 'apiKey',
 ]);
 
 echo SuggestionsWidget::widget([
     'id' => 'widget-id',
+    'token' => 'apiKey',
     'name' => 'name',
 ]);
 
 echo SuggestionsWidget::widget([
+    'token' => 'apiKey',
     'name' => 'name',
 ]);

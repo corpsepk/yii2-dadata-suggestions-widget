@@ -31,7 +31,7 @@ use yii\base\InvalidConfigException;
  * method, for example like this:
  *
  * ```php
- * <?= $form->field($model, 'inn')->widget(\corpsepk\SuggestionsWidget::classname(), [
+ * <?= $form->field($model, 'inn')->widget(SuggestionsWidget::classname(), [
  *     'token' => 'your apiKey'
  * ]) ?>
  * ```
