@@ -1,5 +1,10 @@
 # yii2-dadata-suggestions-widget
 
+[![Latest Version](https://img.shields.io/github/tag/corpsepk/yii2-dadata-suggestions-widget.svg?style=flat-square&label=release)](https://github.com/corpsepk/yii2-dadata-suggestions-widget/tags)
+[![Build Status](https://img.shields.io/travis/corpsepk/yii2-dadata-suggestions-widget/master.svg?style=flat-square)](https://travis-ci.org/corpsepk/yii2-dadata-suggestions-widget)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/corpsepk/yii2-dadata-suggestions-widget.svg?style=flat-square)](https://scrutinizer-ci.com/g/corpsepk/yii2-dadata-suggestions-widget/code-structure)
+[![Quality Score](https://img.shields.io/scrutinizer/g/corpsepk/yii2-dadata-suggestions-widget.svg?style=flat-square)](https://scrutinizer-ci.com/g/corpsepk/yii2-dadata-suggestions-widget)
+
 Wrapper for [DaData](https://dadata.ru/suggestions/)'s jQuery plugin
 
 ## Installation
