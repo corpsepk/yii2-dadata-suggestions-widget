@@ -4,10 +4,13 @@ use \corpsepk\DaData\SuggestionsWidget;
 /* @var $this yii\web\View */
 /* @var $model tests\models\Model */
 
-$form = new \yii\widgets\ActiveForm();
+$form = \yii\widgets\ActiveForm::begin([
+    'action' => '/',
+]);
 $form->field($model, 'name')->widget(SuggestionsWidget::className(), [
     'token' => 'apiKey'
 ]);
+\yii\widgets\ActiveForm::end();
 
 echo SuggestionsWidget::widget([
     'model' => $model,
