@@ -14,13 +14,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```bash
-$ composer require corpsepk/yii2-dadata-suggestions-widget:~0.1
+$ composer require corpsepk/yii2-dadata-suggestions-widget:~0.2
 ```
 
 or add
 
 ```
-"corpsepk/yii2-dadata-suggestions-widget": "~0.1"
+"corpsepk/yii2-dadata-suggestions-widget": "~0.2"
 ```
 
 to the `require` section of your `composer.json` file.
