@@ -5,7 +5,7 @@ use \corpsepk\DaData\SuggestionsWidget;
 /* @var $model tests\models\Model */
 
 $form = new \yii\widgets\ActiveForm();
-$form->field($model, 'name')->widget(SuggestionsWidget::classname(), [
+$form->field($model, 'name')->widget(SuggestionsWidget::className(), [
     'token' => 'apiKey'
 ]);
 

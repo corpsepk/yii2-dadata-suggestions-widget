@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/jquery.suggestions/16.10/css/suggestions.css" rel="stylesheet">    </head>
+    <body>
+                <input type="text" id="model-name" class="form-control" name="Model[name]"><input type="text" id="w1" class="form-control" name="name"><input type="text" id="widget-id" class="form-control" name="name"><input type="text" id="w2" class="form-control" name="name">        <script src="/1ab6a0c3/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.suggestions/16.10/js/jquery.suggestions.min.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+jQuery('#model-name').suggestions({"id":"model-name","token":"apiKey","type":"NAME"});
+jQuery('#w1').suggestions({"id":"w1","token":"apiKey","type":"NAME"});
+jQuery('#widget-id').suggestions({"id":"widget-id","token":"apiKey","type":"NAME"});
+jQuery('#w2').suggestions({"id":"w2","token":"apiKey","type":"NAME"});
+});</script>    </body>
+</html>
