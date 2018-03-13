@@ -18,4 +18,8 @@ new \yii\console\Application([
             'baseUrl' => '/',
         ],
     ],
+    'aliases' => [
+        '@bower' => '@vendor/bower-asset',
+        '@npm'   => '@vendor/npm-asset',
+    ],
 ]);
