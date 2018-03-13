@@ -35,7 +35,6 @@ Add following lines to your main configuration file:
 ],
 ```
 
-
 ## Usage
 
 ```php
