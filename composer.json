@@ -32,6 +32,13 @@
     }
   },
 
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+
   "config": {
     "process-timeout": 1800,
     "fxp-asset": {
