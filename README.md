@@ -48,7 +48,7 @@ The following example will use the name property instead:
 You can also use this widget in an [[yii\widgets\ActiveForm|ActiveForm]] using the [[yii\widgets\ActiveField::widget()|widget()]]
 method, for example like this:
 ```php
-<?= $form->field($model, 'inn')->widget(SuggestionsWidget::classname(), [
+<?= $form->field($model, 'inn')->widget(SuggestionsWidget::class, [
     'token' => 'your apiKey'
 ]) ?>
 ```
