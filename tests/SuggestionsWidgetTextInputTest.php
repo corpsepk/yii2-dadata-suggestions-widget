@@ -4,6 +4,8 @@ namespace tests;
 
 use Yii;
 use tests\models\Model;
+use yii\base\InvalidConfigException;
+use corpsepk\DaData\SuggestionsWidget;
 
 /**
  * SuggestionsWidgetTextInputTest
@@ -20,5 +22,12 @@ class SuggestionsWidgetTextInputTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($expected, $actual);
     }
 
-    // TODO test - Token required
+    public function testTokenRequired()
+    {
+        $this->setExpectedException(InvalidConfigException::class, '`token` param required');
+        SuggestionsWidget::widget([
+            'model' => new Model(),
+            'attribute' => 'name',
+        ]);
+    }
 }

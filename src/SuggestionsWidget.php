@@ -248,6 +248,9 @@ class SuggestionsWidget extends InputWidget
         $this->initInputOptions();
     }
 
+    /**
+     * @throws InvalidConfigException
+     */
     protected function initOptions()
     {
         if (!$this->type) {
@@ -286,13 +289,13 @@ class SuggestionsWidget extends InputWidget
         }
 
         // `type` required
-        if (!$this->options['type']) {
-            throw new InvalidConfigException('`type` required');
+        if (!isset($this->options['type'])) {
+            throw new InvalidConfigException('`type` param required');
         }
 
         // `token` required
-        if (!$this->options['token']) {
-            throw new InvalidConfigException('`token` required');
+        if (!isset($this->options['token'])) {
+            throw new InvalidConfigException('`token` param required');
         }
     }
 
