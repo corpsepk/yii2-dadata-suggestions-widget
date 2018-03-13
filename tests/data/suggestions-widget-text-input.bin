@@ -7,7 +7,7 @@
 <script src="https://cdn.jsdelivr.net/jquery.suggestions/16.10/js/jquery.suggestions.min.js"></script>
 <script src="/1/yii.js"></script>
 <script src="/1/yii.activeForm.js"></script>
-<script type="text/javascript">jQuery(document).ready(function () {
+<script>jQuery(function ($) {
 jQuery('#model-name').suggestions({"id":"model-name","token":"apiKey","type":"NAME"});
 jQuery('#w0').yiiActiveForm([], []);
 jQuery('#w1').suggestions({"id":"w1","token":"apiKey","type":"NAME"});
