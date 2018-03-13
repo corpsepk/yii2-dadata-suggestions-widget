@@ -26,8 +26,25 @@ class SuggestionsWidgetTextInputTest extends \PHPUnit_Framework_TestCase
     {
         $this->setExpectedException(InvalidConfigException::class, '`token` param required');
         SuggestionsWidget::widget([
-            'model' => new Model(),
-            'attribute' => 'name',
+            'name' => 'inn',
         ]);
+    }
+
+    public function testTokenIsSetByDi()
+    {
+        Yii::$app->setContainer([
+            'definitions' => [
+                'corpsepk\DaData\SuggestionsWidget' => [
+                    'token' => 'my-super-secret-api-key',
+                ]
+            ]
+        ]);
+
+        $actual = SuggestionsWidget::widget([
+            'id' => 'sw',
+            'name' => 'inn',
+        ]);
+        $expected = '<input type="text" id="sw" class="form-control" name="inn">';
+        $this->assertEquals($expected, $actual);
     }
 }

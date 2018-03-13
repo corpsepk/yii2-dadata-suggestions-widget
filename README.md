@@ -9,21 +9,32 @@ Wrapper for [DaData](https://dadata.ru/suggestions/)'s jQuery plugin
 
 ## Installation
 
+### 1. Download
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-Either run
+Run the following command:
 
 ```bash
-$ composer require corpsepk/yii2-dadata-suggestions-widget:~0.1
+$ composer require corpsepk/yii2-dadata-suggestions-widget:~0.2
 ```
 
-or add
+### 2. Get api key
+Register at [DaData.ru](https://dadata.ru/profile/#info), and get api key.
 
-```
-"corpsepk/yii2-dadata-suggestions-widget": "~0.1"
+### 3. Configure (optional)
+You can setup container definitions if you do not want to enter api key in every widget.
+Add following lines to your main configuration file:
+
+```php
+'container' => [
+    'definitions' => [
+        'corpsepk\DaData\SuggestionsWidget' => [
+            'token' => 'my-dadata-api-key',
+        ],
+    ],
+],
 ```
 
-to the `require` section of your `composer.json` file.
 
 ## Usage
 
@@ -45,7 +56,7 @@ The following example will use the name property instead:
     'token' => 'your apiKey'
 ]) ?>
 ```
-You can also use this widget in an [[yii\widgets\ActiveForm|ActiveForm]] using the [[yii\widgets\ActiveField::widget()|widget()]]
+You can also use this widget in an `yii\widgets\ActiveForm` using the `yii\widgets\ActiveField::widget()`
 method, for example like this:
 ```php
 <?= $form->field($model, 'inn')->widget(SuggestionsWidget::class, [
