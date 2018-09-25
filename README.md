@@ -66,7 +66,8 @@ method, for example like this:
 ## Useful links
 
 - DaData - https://dadata.ru
-- jQuery plugin options - https://confluence.hflabs.ru/pages/viewpage.action?pageId=466681916
+- jQuery plugin - https://github.com/hflabs/suggestions-jquery
+- jQuery plugin options - https://confluence.hflabs.ru/pages/viewpage.action?pageId=204669097
 - Hints - https://dadata.userecho.com/topics/2090
 
 
