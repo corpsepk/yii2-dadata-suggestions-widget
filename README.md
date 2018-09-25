@@ -15,7 +15,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Run the following command:
 
 ```bash
-$ composer require corpsepk/yii2-dadata-suggestions-widget:~0.3
+$ composer require corpsepk/yii2-dadata-suggestions-widget:~0.4
 ```
 
 ### 2. Get api key

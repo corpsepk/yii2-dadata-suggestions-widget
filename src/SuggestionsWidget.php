@@ -37,7 +37,7 @@ use yii\base\InvalidConfigException;
  * ```
  *
  * Параметры jQuery плагина
- * @see https://confluence.hflabs.ru/pages/viewpage.action?pageId=466681916
+ * @see https://confluence.hflabs.ru/pages/viewpage.action?pageId=207454318
  *
  * @author Alexsandr Khramov <corpsepk@gmail.com>
  * @see https://github.com/corpsepk/...
@@ -51,7 +51,7 @@ class SuggestionsWidget extends InputWidget
     const TYPE_EMAIL = 'EMAIL';
 
     /**
-     * @see https://confluence.hflabs.ru/pages/viewpage.action?pageId=466681917
+     * @see https://confluence.hflabs.ru/pages/viewpage.action?pageId=207454320
      */
     const CALLBACK_BEFORE_RENDER = 'beforeRender';
     const CALLBACK_FORMAT_RESULT = 'formatResult';
@@ -180,6 +180,19 @@ class SuggestionsWidget extends InputWidget
      * @var bool
      */
     public $noCache;
+
+    /**
+     * Поясняющий текст, который показывается,
+     * если для введённого запроса ничего не найдено.
+     * Текст зависит от типа подсказок.
+     *
+     * NAME: false
+     * ADDRESS: 'Неизвестный адрес'
+     * EMAIL: false
+     * PARTY: 'Неизвестная организация'
+     * BANK: 'Неизвестный банк'
+     */
+    public $noSuggestionsHint;
 
     /**
      * Прокрутка поля ввода к верхнему краю экрана при фокусе. Для мобильных устройств.
