@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://cdn.jsdelivr.net/jquery.suggestions/16.10/css/suggestions.css" rel="stylesheet">    </head>
+        <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@18.8.0/dist/css/suggestions.min.css" rel="stylesheet">    </head>
     <body>
                 <form id="w0" action="/" method="post"></form><input type="text" id="model-name" class="form-control" name="Model[name]"><input type="text" id="w1" class="form-control" name="name"><input type="text" id="widget-id" class="form-control" name="name"><input type="text" id="w2" class="form-control" name="name">        <script src="/0/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.suggestions/16.10/js/jquery.suggestions.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@18.8.0/dist/js/jquery.suggestions.min.js"></script>
 <script src="/1/yii.js"></script>
 <script src="/1/yii.activeForm.js"></script>
 <script>jQuery(function ($) {
