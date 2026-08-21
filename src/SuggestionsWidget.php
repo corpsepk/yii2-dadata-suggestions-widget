@@ -252,6 +252,12 @@ class SuggestionsWidget extends InputWidget
     public $width;
 
     /**
+     * Whether this input is required.
+     * @var bool
+     */
+    public $required;
+
+    /**
      * @inheritdoc
      */
     public function init()
@@ -315,6 +321,9 @@ class SuggestionsWidget extends InputWidget
     protected function initInputOptions()
     {
         $this->inputOptions['id'] = $this->options['id'];
+        if ($this->required) {
+            $this->inputOptions['required'] = true;
+        }
         Html::addCssClass($this->inputOptions, 'form-control');
     }
 
